@@ -1,0 +1,547 @@
+@import "bourbon"
+@import "var"
+@import "../app/libs/Magnific-Popup/magnific-popup"
+@import '../app/libs/owl/assets/owl.carousel'
+*::-webkit-input-placeholder
+    color: #ffffff
+    opacity: 1
+
+*:-moz-placeholder
+    color: #ffffff
+    opacity: 1
+
+*::-moz-placeholder
+    color: #ffffff
+    opacity: 1
+
+*:-ms-input-placeholder
+    color: #ffffff
+    opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+    color: #ffffff
+
+body input:required:valid,
+body textarea:required:valid
+    color: #ffffff
+
+//Custom Styles Here
+.homesect
+    padding-top: 80px
+    background-color: #f9f9f9
+    position: relative
+    .section-head
+        margin-bottom: 60px
+        text-align: center
+        p
+            margin-top: 60px
+            animation-delay: .3s
+            a
+                font-family: RalewayBold, $helvetica
+                &:hover
+                    text-decoration: none
+        h2
+            position: relative
+            &::after
+                position: absolute
+                content: ""
+                height: 4px
+                background-color: $main-color
+                width: 165px
+                display: block
+                bottom: -30px
+                left: 50%
+                transform: translate(-50%, 0)
+        h3
+            margin-top: 50px
+    .section-bottom
+        //margin-top: 70px
+        background-color: #e5e5e5
+        padding: 50px 0
+        text-align: center
+    &::before
+        content: ""
+        height: 6px
+        position: absolute
+        width: 100%
+        top: -6px
+        background: url(img/bah_1.png) repeat-x
+        z-index: 2
+
+.section_1
+    .section-bottom
+        background-color: #2c3949
+
+.section-content
+    //min-height: 548px
+    background: url(img/s1_gray_bg.png) no-repeat top
+    position: relative
+    padding-bottom: 60px
+    padding-top: 10px
+
+    .info-item-wrap:nth-child(2)
+        .info-item
+            margin-top: 0
+
+    .s1-bottom-triangle
+        height: 90px
+        position: absolute
+        width: 100%
+        bottom: 0
+        background-size: 100% 100%
+        background: url(img/s1_triangle.svg) top
+        z-index: 2
+        text-align: center
+        .triangle-logo
+            width: 117px
+            z-index: 30
+            margin: 30px auto 0
+        .scales
+            //margin-top: -215px
+            position: absolute
+            left: 50%
+            top: -130px
+            transform: translate(-50%, 0)
+            width: 160px
+            z-index: -1
+
+.s1_bottom
+    padding: 15px 0 65px
+    background-color: #394b5f
+    //text-align: center
+    .info-item
+        margin: 15px 0 0
+        p
+            color: white
+            border-color: #546476
+    .info-item-wrap:nth-child(2)
+        .info-item
+            margin-top: 40px
+
+.info-item
+    padding-left: 50px
+    max-width: 264px
+    line-height: em(19px)
+    margin: 40px 0
+    h4
+        margin-top: 0
+        margin-bottom: 10px
+        a
+            font-size: em(24px)
+            text-transform: none
+            line-height: em(13px)
+    p
+        font-size: em(15px)
+        padding-bottom: 18px
+        border-bottom: 1px solid #dee1e5
+//&:nth-of-type(2)
+//    margin-top: 0
+
+
+
+.s2-items
+    padding-bottom: 20px
+    .s2-item
+        text-align: center
+        margin-bottom: 75px
+        display: block
+        > span
+            display: block
+        &-text
+            font-family: RalewayBold, $helvetica
+            font-size: em(14px)
+            color: #111
+            line-height: em(20px)
+
+    .img-wrap
+        display: inline-block
+        padding-bottom: 32px
+        margin-bottom: 12px
+        position: relative
+        &::before
+            content: ''
+            position: absolute
+            height: 1px
+            background-color: $main-color
+            width: 58px
+            bottom: 0
+            left: 50%
+            transform: translate(-50%, 0)
+        img
+            max-width: 75px
+            height: 60px
+            width: auto
+
+.img-wrap
+    img
+        width: 100%
+        max-width: 100%
+
+.s2-items-container
+    text-align: center
+    .s2-item-wrap
+        display: inline-block
+        float: none
+        padding: 0 15px
+        width: 185px
+        vertical-align: top
+        opacity: 0
+        transition: all .5s ease
+        transform: translateY(-25px)
+        &.on
+            opacity: 1
+            transform: translateY(0)
+
+.s_dark
+    background-color: #2c3949
+    color: white
+    &:before
+        background-image: url(img/bah_2.png)
+    .section-head
+        h2
+            color: white
+        p
+            color: #e5e5e5
+
+    .section-bottom
+        background-color: #394b5f
+        margin-top: 30px
+
+.section_3
+    .section-content
+        min-height: 850px
+        background-image: url(img/s3_sun_bg.png)
+        padding-top: 60px
+        padding-left: 40px
+        .info-item
+            margin-top: 60px
+            p
+                border-bottom: none
+
+    .row:nth-of-type(2)
+        .info-item-wrap:nth-child(1), .info-item-wrap:nth-child(3)
+            .info-item
+                margin-top: 50px
+    .row:nth-of-type(1), .row:nth-of-type(3)
+        .info-item-wrap:nth-child(1)
+            .info-item
+                margin-left: 82px
+        .info-item-wrap:nth-child(3)
+            .info-item
+                margin-left: -35px
+
+    .row:nth-of-type(3)
+        .info-item-wrap:nth-child(2)
+            .info-item
+                margin-top: 170px
+    .section-head
+        margin-bottom: 20px
+
+.s3-img-wrap
+    width: 130px
+    height: 130px
+    background-color: $main-color
+    text-align: center
+    border-radius: 100%
+    margin: 57px 0 0 96px
+    img
+        width: 70px
+        margin-top: 30px
+
+.s_gray
+    background-color: #e5e5e5
+    &::before
+        background-image: url(img/bah_3.png)
+    .section-bottom
+        background-color: #cccccc
+
+.cards
+    text-align: center
+    perspective: 600px
+    .card
+        &-on
+            opacity: 1
+        &-off
+            transform: rotateY(100deg)
+            opacity: 0
+        transition: all .9s ease
+        width: 260px
+        height: 370px
+        display: inline-block
+        background-color: #2c3949
+        margin: 0 12px
+        color: #97a4b2
+        font-size: em(15px)
+        line-height: em(22px)
+        padding: 54px 28px 48px
+        vertical-align: top
+        margin-bottom: 20px
+        .card-icon
+            border-radius: 100%
+            width: 120px
+            height: 120px
+            display: inline-block
+            background-color: $main-color
+            line-height: 120px
+            img
+                //display: inline-block
+                width: 75px
+        h4
+            color: #e5e5e5
+            font-family: RalewayBold, $helvetica
+            font-size: em(18px)
+            margin-top: 30px
+            margin-bottom: 20px
+        p
+            margin-bottom: 0
+            strong
+                font-weight: bold
+                color: $main-color
+
+.section-pb
+    padding-bottom: 70px
+
+.triangles_container
+    color: #ffffff
+    text-decoration: underline
+    font-size: em(19px)
+    margin: 15px 0 70px
+    text-align: center
+    font-family: PFCentroSlabProMedium, $helvetica
+    .tc-item
+        height: 128px
+        width: 290px
+        //background-color: $main-color
+        display: inline-block
+        position: relative
+        margin-left: -40px
+        vertical-align: top
+        transition: all .5s ease
+        &:first-child
+            .tc-content
+                margin-left: 50px
+        &:hover
+            transform: scale(1.10)
+            z-index: 3
+            path
+                fill-opacity: 0 !important
+                stroke-opacity: 1 !important
+        svg
+            position: absolute
+            top: 0
+            left: 0
+            z-index: 1
+        .tc-content
+            position: absolute
+            z-index: 3
+            margin-top: 40px
+            margin-left: 55px
+            text-align: left
+            padding-right: 20px
+            span
+                font-size: em(20px)
+            img
+                height: 45px
+                float: left
+                margin-right: 15px
+
+.teams
+    @extend .cards
+    .team
+        @extend .card
+        &-on
+            opacity: 1
+        &-off
+            transform: rotateY(100deg)
+            opacity: 0
+        background-color: #e5e5e5
+        border: 1px solid #d6d6d5
+        height: 350px
+        h4
+            color: #333
+            text-transform: none
+            margin-bottom: 10px
+            margin-top: 35px
+        p
+            font-size: em(15px)
+            color: #6e7b8b
+            height: auto
+        .team-phone
+            margin-top: 20px
+            font-family: RobotoBold, $helvetica
+            font-size: em(18px)
+            color: #000000
+        .card-icon
+            overflow: hidden
+            line-height: 0
+            box-shadow: 0 0 0 5px #d6d6d5
+            img
+                width: 100%
+
+.slider
+    .slide
+        font-size: em(16px)
+        text-align: center
+        position: relative
+        margin-bottom: 20px
+        .img-wrap
+            width: 116px
+            height: 116px
+            display: inline-block
+            border-radius: 10em
+            overflow: hidden
+            box-shadow: 0 0 0 6px $main-color
+            margin: 6px
+        h3
+            text-transform: none
+            font-size: em(24px)
+            margin-bottom: 0
+        .slide-descr
+            margin-top: 10px
+            font-size: em(15px)
+            color: #6e7b8b
+    .owl-item
+        .img-wrap, .slide-descr, h3, p
+            opacity: 1
+            transition: all .7s ease
+            //transform: translate3d(200px,0,0)
+        .img-wrap
+            transition-delay: .2s
+        .slide-descr, h3
+            transition-delay: .2s
+        p
+            transition-delay: .2s
+        &.active
+            .img-wrap, .slide-descr, h3, p
+                opacity: 1
+                transform: translate3d(0, 0, 0)
+
+    .owl-controls
+        text-align: center
+        .owl-dots
+            .owl-dot
+                width: 15px
+                height: 15px
+                background-color: #CCCCCC
+                display: inline-block
+                margin: 0 3px
+                border-radius: 10em
+                &.active
+                    background-color: $main-color
+        .owl-nav
+            position: absolute
+            top: 12%
+            width: 100%
+            > div
+                height: 29px
+                width: 16px
+                //display: inline-block
+                background-image: url(img/slider_arrows.png)
+                position: absolute
+                left: 20px
+                opacity: .5
+                transition: all .5s ease
+                &:hover
+                    opacity: 1
+            .owl-next
+                right: 20px
+                left: auto
+                background-position: -16px 0
+
+.s8-left
+    .section-head
+        margin-bottom: 50px
+        h2
+            margin-top: 0
+            text-align: left
+            &::after
+                transform: none
+                left: 0
+        p
+            text-align: left
+            font-size: em(16px)
+
+.s8-items
+    margin-bottom: 20px
+    .s8-item
+        text-align: center
+        opacity: 0
+        transition: all .5s ease
+        transform: translateY(-25px)
+        .img-wrap
+            height: 72px
+            img
+                height: 72px
+        p
+            //text-align: left
+            margin-top: 18px
+            font-family: RalewayBold, $helvetica
+            font-size: em(15px)
+            line-height: 16px
+        &.on
+            opacity: 1
+            transform: translateY(0)
+
+.homesect.section_8
+    padding-top: 80px
+    .forms
+        background-color: #cccccc
+        border-color: #999999
+        h4
+            color: #2c3949
+        p, label
+            color: #5e6267
+        input
+            background-color: #c0c0c0
+            color: #333
+            border-color: #999
+        .buttons
+            margin-top: 20px
+            margin-bottom: 5px
+
+.footer-content
+    padding-bottom: 70px
+    .logo, .phone
+        opacity: .35
+    .main-mnu
+        a
+            color: #c7c9cc
+
+.top
+    width: 100%
+    height: 36px
+    background: #1f2b3a url(img/top.png) no-repeat center
+    cursor: pointer
+
+#callback
+    max-width: 310px
+    margin: auto
+    position: relative
+    h4
+        line-height: em(18px)
+
+
+.mfp-forms
+    .forms
+        background-color: #243343
+    .mfp-close
+        color: white
+
+    &.mfp-bg
+        opacity: 0
+        transition: all 0.25s ease-out
+        &.mfp-ready
+            opacity: 0.8
+        &.mfp-removing
+            opacity: 0
+    &.mfp-wrap
+        .mfp-content
+            opacity: 0
+            transition: all 0.25s ease-out
+        &.mfp-ready .mfp-content
+            opacity: 1
+        &.mfp-removing .mfp-content
+            opacity: 0
+//ALWAYS END
+@import "_media.sass"
